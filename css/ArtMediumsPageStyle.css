@@ -1,0 +1,124 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+
+	font-family: 'Nunito', sans-serif;
+}
+
+
+/*-------------------- HEADER --------------------*/
+
+.navbar{
+	display: flex;
+	align-items: center;
+	padding-right: 50px;
+	padding-left: 50px;
+	padding-top: 20px;
+}
+nav{
+	flex: 1;
+	text-align: right;
+}
+
+nav ul{
+	display: inline-block;
+	list-style-type: none;	
+}
+
+nav ul li{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+a{
+	text-decoration: none;
+	color: #555;
+}
+
+p{
+	color: #555;
+}
+
+.container{
+	max-width: 1300px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.navbar a{
+	color: black;
+}
+
+.navbar a:hover{
+	color: #189AB4;
+}
+
+.navbar i:hover{
+	color: #189AB4;
+}
+
+.header .row{
+	margin-top: 0px;
+}
+
+.row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.col-2{
+	flex-basis: 35%;
+	min-width: 300px;
+
+}
+
+.col-2 img{
+	max-width: 100%;
+	padding: 130px 0;
+}
+
+.col-2 h1{
+	font-size: 30px;
+	line-height: 40px;
+	margin: 25px 0 15px;
+}
+
+.col-2 h4{
+	line-height: 25px;
+	
+}
+
+.col-2 h5{
+	margin-bottom: 50px;
+	text-align: right;
+}
+
+.col-2 .title{
+	text-align: left;
+}
+
+.btn{
+	display: inline-block;
+	background: -webkit-linear-gradient(left , #189AB4 , #7EC8E3 , #689AB8);
+	color: whitesmoke;
+	padding: 8px 30px;
+	margin: 30px 0;
+	border-radius: 30px;
+	transition: background 0.7s;
+}
+
+.btn:hover{
+	background: #4871E8;
+}
+
+.menu-icon .fa-solid{
+	margin-left: 20px;
+	display: none;	
+}

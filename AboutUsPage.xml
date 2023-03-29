@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/xsl' href='css/AboutUsPageStyle.xsl'?>
+	<About>
+		<Navbar>
+			<Home> Home </Home>
+		</Navbar>
+
+		<Navbar>
+			<ArtWorks> ArtWorks </ArtWorks>
+		</Navbar>
+
+		<Navbar>
+			<Search> Search </Search>
+		</Navbar>
+
+		<Navbar>
+			<About> About </About>
+		</Navbar>
+
+		<Navbar>
+			<Contact> Contact </Contact>
+		</Navbar>
+
+		<Navbar>
+			<Account> Account </Account>
+		</Navbar>
+
+		<description>
+			<title> Name </title>
+			<value> ArtInterest </value>
+		</description>
+
+		<description>
+			<title> Slogan </title>
+			<value> Get The Art That You Have Dreamed!! </value>
+		</description>
+
+		<contact>
+			<title> Contact </title>
+			<value> +33 891 060 952 </value>
+			<value> +33 962 324 425 </value>
+		</contact>
+
+		<address>
+			<addresstitle> Address </addresstitle>
+			<subaddress> A .C.T. Boulangerie </subaddress> 
+			<subaddress> 23 rue Grenell </subaddress>
+			<subaddress> 75700 Paris Cédec </subaddress>
+		</address>
+
+		<reason>
+			<title> Why Us? </title>
+			<value> The Gallery features original works by contemporary and traditional and also modern aritists in a range of mediums includng painting , ceramics and sculpture.</value>
+			<value> Our Artists come from around the World - many of the world's well known and emerging artists have exhibited thier works in group and solo shows.</value>
+		</reason>
+
+		<footer>
+			<col-1>
+				<value1> Download Our Apps </value1>
+				<value2> Available on both Android and IOS </value2>
+			</col-1>
+		</footer>
+
+		<footer>
+			<col-2>
+				<slogan> Get The Art </slogan>
+				<slogan> That You Have Dreamed!! </slogan>
+			</col-2>
+		</footer>
+
+		<footer>
+			<col-3>
+				<UsefullLinksTitle> Usefull Links </UsefullLinksTitle>
+				<coupons> Coupons </coupons>
+				<bLogpost> BLogPost </bLogpost>
+				<returnpolicy> Return Policy </returnpolicy>
+				<joinaffiliate> Join Affiliate </joinaffiliate>
+			</col-3>
+		</footer>
+
+		<footer>
+			<col-4>
+				<FollowUsTitle> Follow Us </FollowUsTitle>
+				<insta> Instagram </insta>
+				<fb> Facebook </fb>
+				<twitter> Twitter </twitter>
+				<youtube> YouTube </youtube>
+			</col-4>
+		</footer>
+		
+	</About>

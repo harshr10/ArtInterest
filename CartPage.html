@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width , intial-scale=1.02">
+	<title>Cart</title>
+	<link rel="stylesheet" type="text/css" href="css/CartPageStyle.css">
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/dbf904400b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-------------------- HEADER -------------------->
+
+<div class="container">
+	<div class="navbar">
+		<div class="logo">
+			<a href="HomePage.html"><img src="images/BlueLogo-removebg.png"width="125px"></a>
+		</div>
+		<nav>
+					<ul id="Menuitems">
+						<li><a href="http://localhost/ArtInterest/HomePage.php" style="text-decoration: none;">
+							<i class="fa-solid fa-house"></i> Home</a></li>
+						<li><a href="http://localhost/ArtInterest/AllArts.html" style="text-decoration: none;" >
+							<i class="fa-solid fa-palette"></i> ArtWorks</a></li>
+						<li><a href="http://localhost/ArtInterest/SearchPage.php" style="text-decoration: none;">
+							<i class="fa-solid fa-magnifying-glass"></i> Search</a></li>
+						<li><a href="http://localhost/ArtInterest/AboutUs.xml" style="text-decoration: none;">
+							<i class="fa-solid fa-circle-info"></i> About</a></li>
+						<li><a href="http://localhost:8080/ArtInterest/ContactPage.html" style="text-decoration: none;">
+							<i class="fa-solid fa-envelopes-bulk"></i> Contact</a></li>
+						<li><a href="http://localhost/ArtInterest/NewProfilePage.php" style="text-decoration: none;">
+							<i class="fa-solid fa-circle-user"></i> Account</a></li>
+					</ul>
+				</nav>
+		<a href="CartPage.html"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+		<div class="menu-icon">
+			<i class="fa-solid fa-bars fa-xl" onclick="menutoggle()"></i>
+		</div>
+	</div>
+</div>
+
+<!-------------------- CART CONTAINER -------------------->
+
+<div class="small-container cart-page">
+	<table>
+		<tr>
+			<th>Product</th>
+			<th>Subtotal</th>
+		</tr>
+		<tr>
+			<td>
+				<div class="cart-info">
+					<img src="images/AbstractDefault.jpg">
+					<div>
+						<p> sodnsovn </p>
+						<small> Price : $999 </small><br>
+						<a href="">remove</a>
+					</div>
+				</div>
+			</td>
+			<td>$999</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="cart-info">
+					<img src="images/AbstractDefault.jpg">
+					<div>
+						<p> sodnsovn </p>
+						<small> Price : $999 </small><br>
+						<a href="">remove</a>
+					</div>
+				</div>
+			</td>
+			<td>$999</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="cart-info">
+					<img src="images/AbstractDefault.jpg">
+					<div>
+						<p> sodnsovn </p>
+						<small> Price : $999 </small><br>
+						<a href="">remove</a>
+					</div>
+				</div>
+			</td>
+			<td>$999</td>
+		</tr>
+	</table>
+	<div class="total-price">
+		<table>
+			<tr>
+				<td>Subtotal</td>
+				<td>$4000</td>
+			</tr>
+			<tr>
+				<td>Tax</td>
+				<td>$40</td>
+			</tr>
+			<tr>
+				<td>total</td>
+				<td>$4040</td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+<!-------------------- FOOTER -------------------->
+
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col-1">
+				<h3> Download Our Apps </h3>
+				<h4>Available on both Android and IOS </h4>
+				<div class="app-logo">
+					<a href=""><i class="fa-brands fa-google-play fa-2x"></i></a>
+					<a href=""><i class="fa-brands fa-app-store-ios fa-2x"></i></a>
+				</div>
+			</div>
+			<div class="footer-col-2">
+				<a href="HomePage.html"><img src="images/BlueLogo-removebg.png"></a>
+				<h4>Get The Art That <br>
+				You Have Dreamed!</h4>
+			</div>
+			<div class="footer-col-3">
+				<h3> Usefull Links</h3>
+				<ul>
+					<h4><li> Coupons </li>
+					<li> BLogPost </li>
+					<li> Return Policy </li>
+					<li> Join Affiliate </li></h4>
+				</ul>
+			</div>
+			<div class="footer-col-4">
+				<h3> FOllow Us</h3>
+				<ul>
+					<h4><li> Instagram </li>
+					<li> Facebook </li>
+					<li> Teittwe </li>
+					<li> Y=Utube </li></h4>
+				</ul>
+			</div>
+		</div>
+		<hr>
+		<p class="copyright"> <i class="fa-solid fa-copyright"></i> Copyright &#64;ArtInterest 2022 </p>
+	</div>
+</div>
+
+<!-------------------- END -------------------->
+
+<script>
+	var MenuItems = document.getElementById("Menuitems");
+	MenuItems.style.maxHeight = "0px";
+
+	function menutoggle() {
+		if(MenuItems.style.maxHeight == "0px")
+		{
+			MenuItems.style.maxHeight = "200px";
+		}
+		else
+		{
+			MenuItems.style.maxHeight = "0px";
+		}
+	}
+</script>
+</body>
+</html>

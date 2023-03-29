@@ -1,0 +1,401 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+
+	font-family: 'Nunito', sans-serif;
+}
+
+/*-------------------- HEADER --------------------*/
+
+.navbar{
+	display: flex;
+	align-items: center;
+	padding-right: 50px;
+	padding-left: 50px;
+	padding-top: 20px;
+}
+nav{
+	flex: 1;
+	text-align: right;
+}
+
+nav ul{
+	display: inline-block;
+	list-style-type: none;	
+}
+
+nav ul li{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+a{
+	text-decoration: none;
+	color: #555;
+}
+
+p{
+	color: #555;
+}
+
+.navbar a:hover{
+	color: #189AB4;
+}
+
+.navbar a{
+	color: black;
+}
+
+.navbar i:hover{
+	color: #189AB4;
+}
+
+.menu-icon .fa-solid{
+	width: 25px;
+	margin-left: 20px;
+	display: none;	
+}
+
+/*-------------------- BODY --------------------*/
+
+/*-------------------- LOGIN FORM --------------------*/
+
+.container{
+	max-width: 1300px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.col-2{
+	padding: 30px;
+	flex-basis:30%;
+	min-width: 300px;
+}
+
+.col-2 h1{
+	font-size: 30px;
+	line-height: 40px;
+	margin: 25px 0;
+}
+
+.col-2 img{
+	height: 520px;
+	border-radius: 5%;
+}
+
+.col-2 .wrapper{
+	margin-left: -70px;
+	position: relative;
+	overflow: hidden;
+	width: 400px;
+	height: 520px;  
+	border-radius: 50px;
+	box-shadow: 0px 15px 20px rgba(0 , 0 , 0 , 0.1);
+}
+
+.split{
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+}
+
+.split .right{	
+	padding-top: 30px;
+	right: -50px;
+}
+
+.wrapper .title-text{
+	display: flex;
+	width: 210%;
+	margin-top: 10px;
+}
+
+.wrapper .title-text .title{
+	width: 50%;
+	font-size: 25px;
+	font-weight: 500;
+	text-align:center;
+	transition: all 0.7s cubic-bezier(0.68 , -0.55 , 0.265 , 1.55);
+}
+
+.wrapper .form-container{
+	margin-left: 70px;
+	width: 70%;
+	overflow: hidden;
+}
+
+.form-container .form-inner{
+	display: flex;
+	width: 200%;
+}
+
+.slide-controls{
+
+	position: relative;
+	display:  flex;
+	height: 50px;
+	width: 100%;
+	margin:  30px 0 10px 0;
+	justify-content: space-between;
+	border: 1px groove lightgrey;
+	border-radius: 5px;
+	overflow: hidden;
+
+}
+
+.slide-controls .slide{
+
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	color: white;
+	font-size: 18px;
+	font-weight: 500;
+	text-align: center;
+	line-height: 50px;
+	cursor: pointer;
+	transition: all 0.7s ease;
+}
+
+.slide-controls .signup{
+	color: black;
+}
+
+.slide-controls .slide-tab{
+	position: absolute;
+	height: 100%;
+	width: 50%;
+	left: 0;
+	z-index: 0;
+	border-radius: 5px;
+	transition: all 0.7s cubic-bezier(0.68 , -0.55 , 0.265 , 1.55);
+	background: -webkit-linear-gradient(left , #189AB4 , #7EC8E3 , #689AB8);
+
+}
+	
+#signup:checked ~ .slide-tab{
+
+	left: 50%;
+}
+
+#signup:checked ~ .signup{
+
+	color: white;
+}
+
+#signup:checked ~ .login{
+
+	color: black;
+}
+input[type="radio"]{
+	display: none;
+}
+.form-container .form-inner form{
+	width: 50%;
+	transition: all 0.7s cubic-bezier(0.68 , -0.55 , 0.265 , 1.55);
+}
+
+.form-inner form .field{
+	height: 50px;
+	width: 100%;
+	margin-top: 30px;
+}
+
+.form-inner form .field input[type="submit"]:hover{
+	transition: background 0.7s;
+}
+
+.form-inner form .field input[type="submit"]:hover{
+background: steelblue;
+}
+
+.form-inner form .field input{
+	height: 100%;
+	width: 100%;
+	outline: none;
+	text-align: center;
+	font-size: 17px;
+	font-weight: 500;
+	border-radius: 5px;
+	border: 0.5px groove lightgrey;
+	border-bottom-width: 2.7px;
+	transition: all 0.5s ease;
+}
+
+.form-inner form .field input:focus{
+	border-color: #4871E8;	
+}
+
+.remme{
+	margin-top: 20px;
+	text-align: center;
+	color: steelblue;
+}
+
+.form-inner form .pass-link{
+	margin-top: 15px;
+	margin-bottom: -15px;
+	text-align: center;
+}
+
+.form-inner form .signup-link
+{
+	text-align: center;
+	margin-top: 25px;
+}
+
+.form-inner form .pass-link a , 
+.form-inner form .signup-link a{
+	color: #fa4299;
+	font-weight: 500;
+	font-size: 17px;
+	text-decoration: none;
+}
+
+.form-inner form .pass-link a:hover,
+.form-inner form .signup-link a:hover{
+	text-decoration: underline;
+}
+
+form .field input[type = "submit"]{
+	color: white;
+	font-weight: 600;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+	background: -webkit-linear-gradient(left , #189AB4 , #7EC8E3 , #689AB8);
+}
+
+/*-------------------- FOOTER --------------------*/
+
+.footer{
+	background: black;
+	color: #8a8a8a;
+	font-size: 14px;
+	padding: 60px 0 20px;
+}
+
+.footer p{
+	color: #8a8a8a;
+}
+
+.footer h3{
+	color: white;
+	margin-bottom: 20px;
+}
+
+.footer-col-1 , .footer-col-2, .footer-col-3 , .footer-col-4{
+	min-width: 250px;
+	margin-bottom: 20px;
+}
+
+.footer-col-2{
+	flex: 1;
+	text-align: center;
+}
+
+.footer-col-2 img{
+	width: 180px;
+	margin-bottom: 20px;
+}
+
+.footer-col-3 , .footer-col-4{
+	flex-basis: 12%;
+	text-align: center;
+}
+
+ul{
+	list-style-type: none;	
+}
+
+.app-logo{
+	margin-top: 10px;
+}
+
+.app-logo i{
+	margin-top: 15px;
+	width: 45%;
+
+}
+
+.footer hr{
+	border: none;
+	background: #b5b5b5;
+	height: 1px;
+	margin: 20px 0;
+}
+
+.footer a:hover{
+	color: #189AB4;
+}
+
+.copyright{
+	text-align: center;
+}
+
+/*-------------------- END --------------------*/
+
+@media only screen and (max-width: 915px){
+	nav ul{
+		position: absolute;
+		top: 90px;
+		left: 0;
+		background: black;
+		width: 100%;
+		overflow: hidden;
+		transition: max-height 0.7s;
+	}
+
+	nav ul li{
+		display: inline-block;
+		margin-right: 40px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	nav ul li a{
+		color: floralwhite;
+	}
+
+	.menu-icon .fa-solid{
+		display: block;
+		cursor: pointer;
+	}
+
+.col-2 , .col-3 , .col-4{
+		flex-basis: 100%;
+	}
+}
+
+/*-------------------- MOBILE SCREEN --------------------*/
+
+@media only screen and (max-width: 617px){
+
+nav ul li{
+		display: inline-block;
+		margin-right: 40px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.row{
+		text-align: center;
+	}
+
+	.col-2 , .col-3 , .col-4{
+		flex-basis: 100%;
+	}
+
+}
+

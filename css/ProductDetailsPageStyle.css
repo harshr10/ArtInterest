@@ -1,0 +1,347 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+
+	font-family: 'Nunito', sans-serif;
+}
+
+/*-------------------- HEADER --------------------*/
+
+.navbar{
+	display: flex;
+	align-items: center;
+	padding-right: 50px;
+	padding-left: 50px;
+	padding-top: 20px;
+}
+nav{
+	flex: 1;
+	text-align: right;
+}
+
+nav ul{
+	display: inline-block;
+	list-style-type: none;	
+}
+
+nav ul li{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+a{
+	text-decoration: none;
+	color: #555;
+}
+
+p{
+	color: #555;
+}
+
+.navbar a{
+	color: black;
+}
+
+.navbar a:hover{
+	color: #189AB4;
+}
+
+.navbar i:hover{
+	color: #189AB4;
+}
+
+.menu-icon .fa-solid{
+	width: 25px;
+	margin-left: 20px;
+	display: none;	
+}
+
+/*-------------------- BODY --------------------*/
+
+.container{
+	max-width: 1300px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.col-2{
+	flex-basis: 40%;
+	min-width: 300px;
+}
+
+.col-2 img{
+	max-width: 80%;
+
+}
+
+.col-2 h1{
+	font-size: 30px;
+	line-height: 40px;
+	margin: 25px 0;
+}
+
+.col-2 .info{
+	left: 50px;
+}
+
+.btn{
+	display: inline-block;
+	background: -webkit-linear-gradient(left , #189AB4 , #7EC8E3 , #689AB8);
+	color: whitesmoke;
+	padding: 8px 30px;
+	margin-bottom: 30px;
+	border-radius: 30px;
+	transition: background 0.7s;
+}
+
+.btn:hover{
+	background: #4871E8;
+}
+
+.small-container{
+	max-width: 1080px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.col-4{
+	flex-basis: 25%;
+	padding: 10px;
+	min-width: 200px;
+	margin-bottom: 50px;
+	transition: transform 0.5s;
+}
+
+.col-4 img{
+	width: 100%;
+}
+
+.h4{
+	color: #555;
+	font-weight: normal;
+}
+
+.col-4 p{
+	font-size: 14px;
+}
+
+.rating .fa{
+	color: orangered;
+}
+
+.col-4:hover{
+	transform: translateY(-10px);
+}
+
+.single-product{
+	margin-top: 80px;
+}
+
+.single-product .col-2{
+	align-items: center;
+}
+
+.single-product .col-2 img{
+	margin-left: 100px;
+}
+
+.single-product h4{
+	margin:20px 0 ;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.single-product .info{
+	margin-right: 100px;
+}
+
+.single-product .fa-solid{
+	color: orangered;
+	margin: 10px;
+}
+
+.navbar .fa{
+	color: steelblue;
+}
+
+.row-2{
+	justify-content: space-between;
+	margin: 100px auto 50px; 
+}
+
+.title{
+	text-align: left;
+	position: relative;
+	line-height: 60px;
+	color: #555;
+}
+
+.title::after{
+	content: '';
+	background: darkblue;
+	width: 90px;
+	height: 5px;
+	border-radius: 5px;
+	position: absolute;
+	bottom: 0;
+	right: 10px;
+	transform: translateX(-50%);
+}
+
+#view-more :hover{
+	color: darkblue;
+}
+
+
+/*-------------------- FOOTER --------------------*/
+
+.footer{
+	background: black;
+	color: #8a8a8a;
+	font-size: 14px;
+	padding: 60px 0 20px;
+}
+
+.footer p{
+	color: #8a8a8a;
+}
+
+.footer h3{
+	color: white;
+	margin-bottom: 20px;
+}
+
+.footer-col-1 , .footer-col-2, .footer-col-3 , .footer-col-4{
+	min-width: 250px;
+	margin-bottom: 20px;
+}
+
+.footer-col-2{
+	flex: 1;
+	text-align: center;
+}
+
+.footer-col-2 img{
+	width: 180px;
+	margin-bottom: 20px;
+}
+
+.footer-col-3 , .footer-col-4{
+	flex-basis: 12%;
+	text-align: center;
+}
+
+ul{
+	list-style-type: none;	
+}
+
+.app-logo{
+	margin-top: 10px;
+}
+
+.app-logo i{
+	margin-top: 15px;
+	width: 45%;
+
+}
+
+.footer hr{
+	border: none;
+	background: #b5b5b5;
+	height: 1px;
+	margin: 20px 0;
+}
+
+.footer a:hover{
+	color: #189AB4;
+}
+
+.copyright{
+	text-align: center;
+}
+
+/*-------------------- END --------------------*/
+
+@media only screen and (max-width: 945px){
+	nav ul{
+		position: absolute;
+		top: 90px;
+		left: 0;
+		background: black;
+		width: 100%;
+		overflow: hidden;
+		transition: max-height 0.7s;
+	}
+
+	nav ul li{
+		display: inline-block;
+		margin-right: 40px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	nav ul li a{
+		color: floralwhite;
+	}
+
+	.menu-icon .fa-solid{
+		display: block;
+		cursor: pointer;
+	}
+
+	.row{
+		text-align: center;
+	}
+
+	.col-3{
+		flex-basis: 100%;
+	}
+
+	.col-2 , .col-4{
+		flex-basis: 50%;
+	}
+
+	.single-product .col-2 img{
+	margin-left: 0;
+
+	}
+
+	.single-product .row{
+		text-align: left;
+	}
+
+	.single-product .col-2{
+		padding: 20px 0;
+	}
+
+	.single-product h1{
+		font-size: 26px;
+		line-height: 32px;
+	}
+}
+
+/*------ for mobile -----*/
+
+@media only screen and (max-width: 617px){
+
+	nav ul li{
+		display: inline-block;
+		margin-right: 40px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
+
